@@ -1,15 +1,17 @@
 package com.ngoding.android.kulinerindonesia;
 
-public class ProfileData implements Profile {
+public class ProfileData extends Profile {
+    private String nama, email;
+
     @Override
     public String nama() {
-        String nama = "Edo Sugita Ibrahim";
+        nama = "Edo Sugita Ibrahim";
         return nama;
     }
 
     @Override
     public String email() {
-        String email = "edosugita.es@gmail.com";
+        email = "edosugita.es@gmail.com";
         return email;
     }
 }

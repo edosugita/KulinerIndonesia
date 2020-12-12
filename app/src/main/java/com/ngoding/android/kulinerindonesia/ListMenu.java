@@ -69,8 +69,4 @@ public class ListMenu extends AppCompatActivity {
                 break;
         }
     }
-
-    private void showSelectedHero(Food food) {
-        Toast.makeText(this, "Kamu memilih " + food.getName(), Toast.LENGTH_SHORT).show();
-    }
 }

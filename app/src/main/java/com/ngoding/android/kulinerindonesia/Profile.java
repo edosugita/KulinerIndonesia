@@ -1,6 +1,6 @@
 package com.ngoding.android.kulinerindonesia;
 
-public interface Profile {
-    String nama();
-    String email();
+public abstract class Profile {
+    public abstract String nama();
+    public abstract String email();
 }

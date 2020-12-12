@@ -9,7 +9,6 @@ import android.widget.TextView;
 public class PersonalProfile extends AppCompatActivity{
 
     ProfileData profile = new ProfileData();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +16,9 @@ public class PersonalProfile extends AppCompatActivity{
         setContentView(R.layout.activity_personal_profile);
 
         TextView namaP = findViewById(R.id.namaP);
-        String name = profile.nama();
         TextView emailP = findViewById(R.id.email);
-        String email =  profile.email();
 
-        namaP.setText(name);
-        emailP.setText(email);
+        namaP.setText(profile.nama());
+        emailP.setText(profile.email());
     }
 }
