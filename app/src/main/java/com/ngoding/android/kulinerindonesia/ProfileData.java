@@ -1,7 +1,9 @@
 package com.ngoding.android.kulinerindonesia;
 
 public class ProfileData extends Profile {
-    private String nama, email;
+    private String nama;
+    private String email;
+    private int tahun;
 
     @Override
     public String nama() {
@@ -13,5 +15,17 @@ public class ProfileData extends Profile {
     public String email() {
         email = "edosugita.es@gmail.com";
         return email;
+    }
+
+    @Override
+    public String ubah(String x) {
+        nama = x;
+        return x;
+    }
+
+    @Override
+    public int ubah(int y) {
+        tahun = y;
+        return tahun;
     }
 }
